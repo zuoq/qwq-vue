@@ -1,0 +1,35 @@
+body, dl, dd, h1, h2, h3, h4, h5, h6, p, form{margin:0;}   
+ol,li,ul{margin:0; padding:0;}
+li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+img {
+	border: none;
+	outline: none;
+}
+body {
+	background-color: #e9e7e9;
+	height:100%;
+}
+.clearfix {
+	zoom:1;
+}
+.clearfix:after {
+	display: block;
+	content: "";
+	clear: both;
+}
+
+
+.rfz(@px){
+    font-size: @px / 3;
+    [data-dpr="2"] &{
+        font-size: @px / 2;
+    }
+    [data-dpr="3"] &{
+        font-size: @px;
+    }
+}
